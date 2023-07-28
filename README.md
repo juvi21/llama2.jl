@@ -33,7 +33,21 @@ git clone https://github.com/juvi21/llama2.jl && cd llama2.jl && wget https://hu
 
    **Multi-Threaded**: In Progress  
    **CUDA**: In Progress
-   
+
+## Performance
+On my current workstation, the performance is quite fast. However, I have been away visiting my parents for a few days, so I only had the opportunity to test it on one of my first and less powerful station. More testing is coming soon!
+**NOTE**: I compiled llama2.c with the provided command in Andrej's README which is only the basic one to get started and not very optimized.
+
+    
+    gcc -O3 -o run run.c -lm
+    
+    
+| system                   | model          | llama2.c            | llama2.jl            |
+| ------------------------ | -------------- | ------------------ | ------------------- |
+| Ubuntu 22.04 AMD Ryzen 2600 | stories15M.bin | 85.418752 tok/s   | 257.445516 tok/s    |
+| Ubuntu 22.04 AMD Ryzen 2600 | stories42M.bin | 30.761836 tok/s   | 92.567484 tok/s     |
+| Ubuntu 22.04 AMD Ryzen 2600 | stories110.bin | 11.585283 tok/s   | 38.543434 tok/s     |
+
 ## Contributions
 
 Join the dark side and code in Julia. 
