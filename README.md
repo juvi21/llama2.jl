@@ -2,7 +2,8 @@
 <p align="center">
   <img src="assets/jl_cute_lama.png" width="300" height="300" alt="Cute Llama">
 </p>
-Tired of low-level languages? Ever wanted to infer a baby [Llama 2](https://ai.meta.com/llama/) model in pure Julia? Great news – you can now do so at good speeds in under 300 lines of Julia.
+
+Tired of low-level languages? Ever wanted to infer a baby [Llama 2](https://ai.meta.com/llama) model in pure Julia? Great news – you can now do so at good speeds in under 300 lines of Julia. 
 
 This is a fork of Andrej's [llama2.c](https://github.com/karpathy/llama2.c) which has been ported to (for now) a slightly hacky version of Julia. This README is heavily inspired by the Rust port [llama.rs](https://github.com/gaxler/llama2.rs).
 
