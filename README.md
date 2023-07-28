@@ -32,7 +32,7 @@ This is a fork of Andrej's [llama2.c](https://github.com/karpathy/llama2.c) whic
 Join the dark side and code in Julia. 
 Contributions are highly encouraged!
 
-### Contribution Ideas
+**Contribution Ideas:**
 
 - Make it faster.
 - Add CUDA support.
