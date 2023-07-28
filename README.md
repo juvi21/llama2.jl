@@ -4,9 +4,10 @@
 </p>
 
 Don't want to read? No problem got ya covered.
-     ```bash
-    git clone https://github.com/juvi21/llama2.jl && cd llama2.jl && wget https://huggingface.co/karpathy/tinyllamas/resolve/main/stories15M.bin && julia jl_helpers/install_pkg.jl && julia run.jl stories15M.bin tokenizer.bin
-      ```
+     
+```bash
+git clone https://github.com/juvi21/llama2.jl && cd llama2.jl && wget https://huggingface.co/karpathy/tinyllamas/resolve/main/stories15M.bin && julia jl_helpers/install_pkg.jl && julia run.jl stories15M.bin tokenizer.bin
+```
 
 Tired of low-level languages? Ever wanted to infer a baby [Llama 2](https://ai.meta.com/llama) model in pure Julia? Great news – you can now do so at good speeds in under 300 lines of Julia. 
 
