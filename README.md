@@ -35,7 +35,7 @@ git clone https://github.com/juvi21/llama2.jl && cd llama2.jl && wget https://hu
    **CUDA**: In Progress
 
 ## Performance
-On my current workstation, the performance is quite fast. However, I have been away visiting my parents for a few days, so I only had the opportunity to test it on one of my first and less powerful station. More testing is coming soon!
+On my current workstation, the performance is quite fast. However, I have been away visiting my parents for a few days, so I only had the opportunity to test it on one of my very first and less powerful station. More testing is coming soon!
 **NOTE**: I compiled llama2.c with the provided command in Andrej's README which is only the basic one to get started and not very optimized.
 
     
