@@ -3,15 +3,15 @@
   <img src="assets/jl_cute_lama.png" width="300" height="300" alt="Cute Llama">
 </p>
 
-## Don't want to read? Got ya back!     
+Tired of low-level languages? Ever wanted to infer a baby [Llama 2](https://ai.meta.com/llama) model in pure Julia? Great news – you can now do so at good speeds in under 300 lines of Julia. 
+
+This is a fork of Andrej's [llama2.c](https://github.com/karpathy/llama2.c) which has been ported to (for now) a slightly hacky version of Julia. This README is heavily inspired by the Rust port [llama.rs](https://github.com/gaxler/llama2.rs).
+
+**Don't want to read? Got ya back!**     
 
 ```bash
 git clone https://github.com/juvi21/llama2.jl && cd llama2.jl && wget https://huggingface.co/karpathy/tinyllamas/resolve/main/stories15M.bin && julia jl_helpers/install_pkg.jl && julia run.jl stories15M.bin tokenizer.bin
 ```
-
-Tired of low-level languages? Ever wanted to infer a baby [Llama 2](https://ai.meta.com/llama) model in pure Julia? Great news – you can now do so at good speeds in under 300 lines of Julia. 
-
-This is a fork of Andrej's [llama2.c](https://github.com/karpathy/llama2.c) which has been ported to (for now) a slightly hacky version of Julia. This README is heavily inspired by the Rust port [llama.rs](https://github.com/gaxler/llama2.rs).
 
 ## How to run?
 
