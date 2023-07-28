@@ -2,7 +2,6 @@
 
 import Base.@kwdef
 using LinearAlgebra
-using Serialization
 using StatsBase
 using Printf
 using ArgParse
