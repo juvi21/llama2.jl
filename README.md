@@ -4,6 +4,7 @@
 </p>
 
 ## Don't want to read? Got ya back!     
+
 ```bash
 git clone https://github.com/juvi21/llama2.jl && cd llama2.jl && wget https://huggingface.co/karpathy/tinyllamas/resolve/main/stories15M.bin && julia jl_helpers/install_pkg.jl && julia run.jl stories15M.bin tokenizer.bin
 ```
