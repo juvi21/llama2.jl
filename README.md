@@ -19,7 +19,7 @@ This is a fork of Andrej's [llama2.c](https://github.com/karpathy/llama2.c) whic
 2. Ensure you have the tokenizer binary - `tokenizer.bin` (if not, see [tokenizer.py](tokenizer.py)).
 3. Run `run.jl`:
 
-    Single-threaded:
+    **Single-threaded:**
 
     ```bash
     julia run.jl <model> <tokenizer> --temp [temperature]
