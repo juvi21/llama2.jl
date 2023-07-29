@@ -88,7 +88,6 @@ end
 
 read_config(f::IOStream) = Config((read(f, Int32) for _ in 1:7)...)
 
-
 function rmsnorm!(o, x, weight)
     len_x_inv = 1.0 / length(x)
     ss = dot(x, x) * len_x_inv
