@@ -42,11 +42,11 @@ On my current workstation, the performance is quite fast. However, I have been a
     gcc -O3 -o run run.c -lm
     
     
-| system                   | model          | llama2.c            | llama2.jl            |
-| ------------------------ | -------------- | ------------------ | ------------------- |
-| Ubuntu 22.04 AMD Ryzen 2600 | stories15M.bin | 85.418752 tok/s   | 257.445516 tok/s    |
-| Ubuntu 22.04 AMD Ryzen 2600 | stories42M.bin | 30.761836 tok/s   | 92.567484 tok/s     |
-| Ubuntu 22.04 AMD Ryzen 2600 | stories110.bin | 11.585283 tok/s   | 38.543434 tok/s     |
+| system                   | model          | llama2.c            | llmaa2.c -0fast    | llama2.jl            | 
+| ------------------------ | -------------- | ------------------ | ------------------ | ------------------- |
+| Ubuntu 22.04 AMD Ryzen 2600 | stories15M.bin | 85.418752 tok/s   | 189.591078 tok/s   | 257.445516 tok/s    |
+| Ubuntu 22.04 AMD Ryzen 2600 | stories42M.bin | 30.761836 tok/s   | 78.485688 tok/s    | 92.567484 tok/s     |
+| Ubuntu 22.04 AMD Ryzen 2600 | stories110.bin | 11.585283 tok/s   | 30.375223 tok/s    | 38.543434 tok/s     |
 
 ## Contributions
 
