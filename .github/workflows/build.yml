@@ -13,7 +13,6 @@ env:
   BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
 
 jobs:
-  # check basic builds to avoid breaking changes
   ubuntu-focal-make:
     runs-on: ubuntu-20.04
 
@@ -30,13 +29,19 @@ jobs:
 
       - name: Build
         id: make_build
-        run: |
-          make
+        run: make
 
       - name: Build runfast
         id: make_build_runfast
-        run: |
-          make runfast
+        run: make runfast
+
+      - name: Build runomp
+        id: make_build_runomp
+        run: make runomp
+
+      - name: Build rundebug
+        id: make_build_rundebug
+        run: make rundebug
 
   macOS-latest-make:
     runs-on: macos-latest
@@ -49,23 +54,19 @@ jobs:
       - name: Dependencies
         id: depends
         continue-on-error: true
-        run: |
-          brew update
+        run: brew update
 
       - name: Build
         id: make_build
-        run: |
-          make
+        run: make
 
       - name: Build runfast
         id: make_build_runfast
-        run: |
-          make runfast
+        run: make runfast
 
       - name: Build clang
         id: make_build_clang
-        run: |
-          make run CC=clang
+        run: make run CC=clang
 
   windows-latest-make:
     runs-on: windows-latest
@@ -92,5 +93,21 @@ jobs:
 
       - name: Build ${{ matrix.arch }}
         id: build_msvc
-        run: |
-          .\build_msvc.bat
+        run: .\build_msvc.bat
+
+  centos-make:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Clone
+        id: checkout
+        uses: actions/checkout@v3
+      
+      - name: Install Dependencies
+        run: sudo apt-get update && sudo apt-get install -y gcc make
+
+      - name: Build rungnu
+        run: make rungnu
+
+      - name: Build runompgnu
+        run: make runompgnu
