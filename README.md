@@ -58,6 +58,7 @@ Contributions are highly encouraged!
 - Make it faster.
 - Add CUDA support.
 - Introduce Multi-Threaded support.
+- Cutom Prompt
 
 ## Art
 All images in this README were created by Midjourney
