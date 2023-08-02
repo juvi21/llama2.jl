@@ -61,4 +61,4 @@ Contributions are highly encouraged!
 - Cutom Prompt
 
 ## Art
-All images in this README were created by Midjourney
+@Midjourney
